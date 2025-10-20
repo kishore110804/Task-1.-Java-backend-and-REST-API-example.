@@ -1,168 +1,334 @@
-# Task 1: Java REST API with MongoDB# Task Manager API - Kaiburr Assessment Task 1
+# Task 1: Java REST API with MongoDB# Task 1: Java REST API with MongoDB# Task Manager API - Kaiburr Assessment Task 1
 
 
+
+**Author:** Kishore  
+
+**Date:** October 20, 2025
 
 **Kaiburr Technical Assessment - Task 1**  ![Java](https://img.shields.io/badge/Java-17-orange)
 
+---
+
 **Author:** Kishore  ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.0-green)
 
+## 📋 Overview
+
 **Date:** October 20, 2025![MongoDB](https://img.shields.io/badge/MongoDB-7.0-brightgreen)
+
+A RESTful web service built with **Spring Boot** and **MongoDB** that manages task objects. Tasks represent shell commands that can be executed, with full execution history tracking stored in the database.
 
 ![Maven](https://img.shields.io/badge/Maven-3.9+-blue)
 
 ---
 
-## 📋 Overview
+---
+
+## 🛠️ Tech Stack
 
 ## 📋 Overview
 
-A RESTful API for managing and executing shell commands in tasks. Each task represents a shell command that can be executed, with full execution history tracking. Built with Spring Boot and MongoDB for the Kaiburr technical assessment.
+- Java 17
 
-A RESTful web service built with **Spring Boot** and **MongoDB** that manages task objects representing shell commands. The application provides endpoints for creating, reading, updating, deleting, and executing tasks, with execution history tracking.
+- Spring Boot 3.2.0## 📋 Overview
+
+- Spring Data MongoDB
+
+- MongoDB Atlas (Cloud Database)A RESTful API for managing and executing shell commands in tasks. Each task represents a shell command that can be executed, with full execution history tracking. Built with Spring Boot and MongoDB for the Kaiburr technical assessment.
+
+- Maven
+
+- LombokA RESTful web service built with **Spring Boot** and **MongoDB** that manages task objects representing shell commands. The application provides endpoints for creating, reading, updating, deleting, and executing tasks, with execution history tracking.
+
+- Swagger UI
 
 ## 🎯 Features
 
 ---
 
-- ✅ **CRUD Operations** - Create, Read, Update, Delete tasks
-
-## 🛠️ Technology Stack- ✅ **Command Execution** - Execute shell commands and track results
-
-- ✅ **Search Functionality** - Search tasks by name (case-insensitive)
-
-- **Java:** 17- ✅ **Execution History** - Track all command executions with timestamps and output
-
-- **Spring Boot:** 3.2.0- ✅ **Security Validation** - Validates commands to prevent malicious code execution
-
-- **Spring Data MongoDB:** Database integration- ✅ **REST API** - JSON-based REST endpoints
-
-- **MongoDB Atlas:** Cloud database- ✅ **MongoDB Integration** - Persistent storage with MongoDB
-
-- **Maven:** Build tool- ✅ **API Documentation** - Swagger UI for interactive API testing
-
-- **Lombok:** Reduce boilerplate code- ✅ **Cross-Platform** - Works on Windows, Linux, and macOS
-
-- **Swagger/OpenAPI:** API documentation
-
-## 🏗️ Architecture
-
 ---
 
-```
+## 🚀 Features
 
-## 📊 Data ModelTask Manager API
+- ✅ **CRUD Operations** - Create, Read, Update, Delete tasks
 
-├── Model Layer (Task, TaskExecution)
+- ✅ Create, read, update, and delete tasks
 
-### Task Object├── Repository Layer (MongoDB integration)
+- ✅ Execute shell commands and capture output## 🛠️ Technology Stack- ✅ **Command Execution** - Execute shell commands and track results
 
-```json├── Service Layer (Business logic & validation)
+- ✅ Track execution history with timestamps
 
-{├── Controller Layer (REST endpoints)
+- ✅ Search tasks by name- ✅ **Search Functionality** - Search tasks by name (case-insensitive)
 
-  "id": "671527abc456def789",└── Exception Handling (Global error handling)
+- ✅ Security validation to block dangerous commands
 
-  "name": "Print Hello World",```
-
-  "owner": "Kishore",
-
-  "command": "echo Hello World!",## 📊 Data Model
-
-  "taskExecutions": [
-
-    {### Task Object
-
-      "startTime": "2025-10-20T19:30:00.000Z",```json
-
-      "endTime": "2025-10-20T19:30:00.500Z",{
-
-      "output": "Hello World!",  "id": "123",
-
-      "status": "success"  "name": "Print Hello",
-
-    }  "owner": "John Smith",
-
-  ]  "command": "echo Hello World!",
-
-}  "taskExecutions": [
-
-```    {
-
-      "startTime": "2023-04-21T15:51:42.276Z",
-
-### Properties      "endTime": "2023-04-21T15:51:43.276Z",
-
-      "output": "Hello World!",
-
-**Task:**      "status": "success"
-
-- `id` (String) - Unique task identifier    }
-
-- `name` (String) - Task name  ]
-
-- `owner` (String) - Task owner}
-
-- `command` (String) - Shell command to execute```
-
-- `taskExecutions` (List) - Execution history
-
-## 🚀 Prerequisites
-
-**TaskExecution:**
-
-- `startTime` (Date) - Execution start timestampBefore running this application, ensure you have:
-
-- `endTime` (Date) - Execution end timestamp
-
-- `output` (String) - Command output- ☑️ **Java 17 or higher** - [Download JDK](https://adoptium.net/)
-
-- `status` (String) - Execution status- ☑️ **Maven 3.9+** - [Download Maven](https://maven.apache.org/download.cgi)
-
-- ☑️ **MongoDB 7.0+** - Choose one:
-
----  - **Option 1:** [MongoDB Community Edition](https://www.mongodb.com/try/download/community) (Local)
-
-  - **Option 2:** [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) (Cloud - Free Tier)
-
-## 🚀 Features- ☑️ **Postman or cURL** - For API testing
-
-
-
-- ✅ RESTful API with 5+ endpoints### Verify Installations
-
-- ✅ CRUD operations for tasks
-
-- ✅ Command execution with output capture```powershell
-
-- ✅ Execution history tracking# Check Java version
-
-- ✅ Security validation for dangerous commandsjava -version
+- ✅ REST API with JSON responses- **Java:** 17- ✅ **Execution History** - Track all command executions with timestamps and output
 
 - ✅ MongoDB persistent storage
 
-- ✅ Comprehensive error handling# Check Maven version
+- **Spring Boot:** 3.2.0- ✅ **Security Validation** - Validates commands to prevent malicious code execution
 
-- ✅ Swagger UI for API testingmvn -version
+---
 
-- ✅ Cross-platform support (Windows/Linux/Mac)
-
-# Check MongoDB (if running locally)
-
----mongosh --version
-
-```
+- **Spring Data MongoDB:** Database integration- ✅ **REST API** - JSON-based REST endpoints
 
 ## 📡 API Endpoints
 
-## 🛠️ MongoDB Setup
+- **MongoDB Atlas:** Cloud database- ✅ **MongoDB Integration** - Persistent storage with MongoDB
 
 | Method | Endpoint | Description |
 
-|--------|----------|-------------|### Option 1: Local MongoDB (Recommended for Development)
+|--------|----------|-------------|- **Maven:** Build tool- ✅ **API Documentation** - Swagger UI for interactive API testing
 
 | `GET` | `/api/tasks` | Get all tasks |
 
+| `GET` | `/api/tasks?id={id}` | Get task by ID |- **Lombok:** Reduce boilerplate code- ✅ **Cross-Platform** - Works on Windows, Linux, and macOS
+
+| `PUT` | `/api/tasks` | Create/update task |
+
+| `DELETE` | `/api/tasks/{id}` | Delete task |- **Swagger/OpenAPI:** API documentation
+
+| `GET` | `/api/tasks/search?name={name}` | Search by name |
+
+| `PUT` | `/api/tasks/{id}/execute` | Execute command |## 🏗️ Architecture
+
+
+
+------
+
+
+
+## ⚙️ Setup & Run```
+
+
+
+### Prerequisites## 📊 Data ModelTask Manager API
+
+- Java 17+
+
+- Maven 3.9+├── Model Layer (Task, TaskExecution)
+
+
+
+### Steps### Task Object├── Repository Layer (MongoDB integration)
+
+
+
+1. **Clone the repository**```json├── Service Layer (Business logic & validation)
+
+```bash
+
+git clone https://github.com/kishore110804/Task-1.-Java-backend-and-REST-API-example..git{├── Controller Layer (REST endpoints)
+
+cd Task-1.-Java-backend-and-REST-API-example.
+
+```  "id": "671527abc456def789",└── Exception Handling (Global error handling)
+
+
+
+2. **Configure MongoDB**  "name": "Print Hello World",```
+
+
+
+Edit `src/main/resources/application.properties` with your MongoDB connection string.  "owner": "Kishore",
+
+
+
+3. **Build & Run**  "command": "echo Hello World!",## 📊 Data Model
+
+```bash
+
+mvn clean install  "taskExecutions": [
+
+mvn spring-boot:run
+
+```    {### Task Object
+
+
+
+Application starts at: `http://localhost:8080`      "startTime": "2025-10-20T19:30:00.000Z",```json
+
+
+
+4. **Test API**      "endTime": "2025-10-20T19:30:00.500Z",{
+
+
+
+Open Swagger UI: `http://localhost:8080/swagger-ui.html`      "output": "Hello World!",  "id": "123",
+
+
+
+---      "status": "success"  "name": "Print Hello",
+
+
+
+## 📸 Demo Screenshots    }  "owner": "John Smith",
+
+
+
+### 1. Create Task  ]  "command": "echo Hello World!",
+
+
+
+![Create Task](screenshots/01-create-task.png)}  "taskExecutions": [
+
+
+
+---```    {
+
+
+
+### 2. Get All Tasks      "startTime": "2023-04-21T15:51:42.276Z",
+
+
+
+![Get All Tasks](screenshots/02-get-all-tasks.png)### Properties      "endTime": "2023-04-21T15:51:43.276Z",
+
+
+
+---      "output": "Hello World!",
+
+
+
+### 3. Get Task by ID**Task:**      "status": "success"
+
+
+
+![Get Task by ID](screenshots/03-get-task-by-id.png)- `id` (String) - Unique task identifier    }
+
+
+
+---- `name` (String) - Task name  ]
+
+
+
+### 4. Search Tasks by Name- `owner` (String) - Task owner}
+
+
+
+![Search Tasks](screenshots/04-search-tasks.png)- `command` (String) - Shell command to execute```
+
+
+
+---- `taskExecutions` (List) - Execution history
+
+
+
+### 5. Execute Task## 🚀 Prerequisites
+
+
+
+![Execute Task](screenshots/05-execute-task.png)**TaskExecution:**
+
+
+
+---- `startTime` (Date) - Execution start timestampBefore running this application, ensure you have:
+
+
+
+### 6. Delete Task- `endTime` (Date) - Execution end timestamp
+
+
+
+![Delete Task](screenshots/06-delete-task.png)- `output` (String) - Command output- ☑️ **Java 17 or higher** - [Download JDK](https://adoptium.net/)
+
+
+
+---- `status` (String) - Execution status- ☑️ **Maven 3.9+** - [Download Maven](https://maven.apache.org/download.cgi)
+
+
+
+## 🔒 Security- ☑️ **MongoDB 7.0+** - Choose one:
+
+
+
+Commands are validated before execution. Dangerous operations are blocked:---  - **Option 1:** [MongoDB Community Edition](https://www.mongodb.com/try/download/community) (Local)
+
+- File deletion (`rm`, `del`)
+
+- Privilege escalation (`sudo`, `su`)  - **Option 2:** [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) (Cloud - Free Tier)
+
+- Network operations (`curl`, `wget`)
+
+- System control (`shutdown`, `reboot`)## 🚀 Features- ☑️ **Postman or cURL** - For API testing
+
+- File redirection and command chaining
+
+
+
+---
+
+- ✅ RESTful API with 5+ endpoints### Verify Installations
+
+## 📁 Project Structure
+
+- ✅ CRUD operations for tasks
+
+```
+
+src/- ✅ Command execution with output capture```powershell
+
+├── main/java/com/kaiburr/taskmanager/
+
+│   ├── controller/      # REST endpoints- ✅ Execution history tracking# Check Java version
+
+│   ├── model/          # Task & TaskExecution entities
+
+│   ├── repository/     # MongoDB repository- ✅ Security validation for dangerous commandsjava -version
+
+│   ├── service/        # Business logic & validation
+
+│   └── exception/      # Error handling- ✅ MongoDB persistent storage
+
+└── resources/
+
+    └── application.properties- ✅ Comprehensive error handling# Check Maven version
+
+```
+
+- ✅ Swagger UI for API testingmvn -version
+
+---
+
+- ✅ Cross-platform support (Windows/Linux/Mac)
+
+## 🎯 Implementation Highlights
+
+# Check MongoDB (if running locally)
+
+- **Task Model:** Contains id, name, owner, command, and taskExecutions list
+
+- **TaskExecution Model:** Tracks startTime, endTime, and output for each execution---mongosh --version
+
+- **Command Validation:** Blocks dangerous commands before execution
+
+- **Error Handling:** Returns appropriate HTTP status codes (200, 201, 404, 400, 500)```
+
+- **Cross-Platform:** Works on Windows, Linux, and macOS
+
+## 📡 API Endpoints
+
+---
+
+## 🛠️ MongoDB Setup
+
+## 📚 API Documentation
+
+| Method | Endpoint | Description |
+
+Interactive API documentation available at: `http://localhost:8080/swagger-ui.html`
+
+|--------|----------|-------------|### Option 1: Local MongoDB (Recommended for Development)
+
+---
+
+| `GET` | `/api/tasks` | Get all tasks |
+
+## 👤 Author
+
 | `GET` | `/api/tasks?id={id}` | Get task by ID |1. **Install MongoDB Community Edition**
+
+Kishore - Kaiburr Technical Assessment Task 1
 
 | `PUT` | `/api/tasks` | Create or update task |   - Download from: https://www.mongodb.com/try/download/community
 
