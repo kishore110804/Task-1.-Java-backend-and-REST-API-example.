@@ -1,4 +1,4 @@
-# Task 1: Java REST API with MongoDB# Task 1: Java REST API with MongoDB# Task Manager API - Kaiburr Assessment Task 1
+# Task Manager API - Kaiburr Assessment Task 1# Task 1: Java REST API with MongoDB# Task 1: Java REST API with MongoDB# Task Manager API - Kaiburr Assessment Task 1
 
 
 
@@ -6,61 +6,125 @@
 
 **Date:** October 20, 2025
 
-**Kaiburr Technical Assessment - Task 1**  ![Java](https://img.shields.io/badge/Java-17-orange)
+**Author:** Kishore  
 
 ---
+
+**Date:** October 20, 2025
+
+## What This Does
+
+**Kaiburr Technical Assessment - Task 1**  ![Java](https://img.shields.io/badge/Java-17-orange)
+
+A REST API built with **Spring Boot** and **MongoDB** that manages task objects. Tasks represent shell commands that can be executed, with full execution history tracking.
+
+---
+
+**Tech Stack:** Java 17 | Spring Boot 3.2.0 | MongoDB Atlas | Maven
 
 **Author:** Kishore  ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.0-green)
 
+---
+
 ## 📋 Overview
+
+## API Endpoints
 
 **Date:** October 20, 2025![MongoDB](https://img.shields.io/badge/MongoDB-7.0-brightgreen)
 
-A RESTful web service built with **Spring Boot** and **MongoDB** that manages task objects. Tasks represent shell commands that can be executed, with full execution history tracking stored in the database.
+| Method | Endpoint | Description |
 
-![Maven](https://img.shields.io/badge/Maven-3.9+-blue)
+|--------|----------|-------------|A RESTful web service built with **Spring Boot** and **MongoDB** that manages task objects. Tasks represent shell commands that can be executed, with full execution history tracking stored in the database.
 
----
+| `GET` | `/api/tasks` | Get all tasks |
 
----
+| `GET` | `/api/tasks?id={id}` | Get task by ID |![Maven](https://img.shields.io/badge/Maven-3.9+-blue)
 
-## 🛠️ Tech Stack
+| `PUT` | `/api/tasks` | Create/update task |
 
-## 📋 Overview
+| `DELETE` | `/api/tasks/{id}` | Delete task |---
 
-- Java 17
+| `GET` | `/api/tasks/search?name={name}` | Search by name |
 
-- Spring Boot 3.2.0## 📋 Overview
+| `PUT` | `/api/tasks/{id}/execute` | Execute command |---
 
-- Spring Data MongoDB
+
+
+---## 🛠️ Tech Stack
+
+
+
+## Quick Start## 📋 Overview
+
+
+
+```bash- Java 17
+
+git clone https://github.com/kishore110804/Task-1.-Java-backend-and-REST-API-example..git
+
+cd Task-1.-Java-backend-and-REST-API-example.- Spring Boot 3.2.0## 📋 Overview
+
+mvn clean install
+
+mvn spring-boot:run- Spring Data MongoDB
+
+```
 
 - MongoDB Atlas (Cloud Database)A RESTful API for managing and executing shell commands in tasks. Each task represents a shell command that can be executed, with full execution history tracking. Built with Spring Boot and MongoDB for the Kaiburr technical assessment.
 
+**Access:** http://localhost:8080/swagger-ui.html
+
 - Maven
+
+---
 
 - LombokA RESTful web service built with **Spring Boot** and **MongoDB** that manages task objects representing shell commands. The application provides endpoints for creating, reading, updating, deleting, and executing tasks, with execution history tracking.
 
+## Demo Screenshots
+
 - Swagger UI
 
-## 🎯 Features
+### Create Task
+
+![Create Task](screenshots/01-create-task.png)## 🎯 Features
+
+
+
+### Get All Tasks---
+
+![Get All Tasks](screenshots/02-get-all-tasks.png)
 
 ---
 
----
+### Get Task by ID
 
-## 🚀 Features
+![Get Task by ID](screenshots/03-get-task-by-id.png)## 🚀 Features
 
-- ✅ **CRUD Operations** - Create, Read, Update, Delete tasks
+
+
+### Search Tasks- ✅ **CRUD Operations** - Create, Read, Update, Delete tasks
+
+![Search Tasks](screenshots/04-search-tasks.png)
 
 - ✅ Create, read, update, and delete tasks
 
-- ✅ Execute shell commands and capture output## 🛠️ Technology Stack- ✅ **Command Execution** - Execute shell commands and track results
+### Execute Task
 
-- ✅ Track execution history with timestamps
+![Execute Task](screenshots/05-execute-task.png)- ✅ Execute shell commands and capture output## 🛠️ Technology Stack- ✅ **Command Execution** - Execute shell commands and track results
+
+
+
+### Delete Task- ✅ Track execution history with timestamps
+
+![Delete Task](screenshots/06-delete-task.png)
 
 - ✅ Search tasks by name- ✅ **Search Functionality** - Search tasks by name (case-insensitive)
 
+---
+
 - ✅ Security validation to block dangerous commands
+
+**Features:** CRUD operations • Command execution • Search functionality • Security validation • MongoDB storage • Swagger UI documentation
 
 - ✅ REST API with JSON responses- **Java:** 17- ✅ **Execution History** - Track all command executions with timestamps and output
 
