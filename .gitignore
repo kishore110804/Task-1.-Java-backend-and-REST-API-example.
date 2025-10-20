@@ -1,0 +1,33 @@
+# Ignore Maven build files
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Ignore IDE files
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
+.settings/
+.classpath
+.project
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+logs/
+
+# Ignore application properties with sensitive data
+application-*.properties
+!application.properties
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.swp
+*~
