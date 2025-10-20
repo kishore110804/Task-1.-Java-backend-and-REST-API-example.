@@ -1,4 +1,4 @@
-# Task Manager API - Kaiburr Assessment Task 1# Task 1: Java REST API with MongoDB# Task 1: Java REST API with MongoDB# Task Manager API - Kaiburr Assessment Task 1
+# Task Manager API - Kaiburr Assessment Task 1# Task Manager API - Kaiburr Assessment Task 1# Task 1: Java REST API with MongoDB# Task 1: Java REST API with MongoDB# Task Manager API - Kaiburr Assessment Task 1
 
 
 
@@ -11,22 +11,52 @@
 ---
 
 **Date:** October 20, 2025
+
+## Screenshots
+
+**Author:** Kishore  
+
+### Create Task
+
+![Create Task](screenshots/01-create-task.png)---
+
+
+
+### Get All Tasks**Date:** October 20, 2025
+
+![Get All Tasks](screenshots/02-get-all-tasks.png)
 
 ## What This Does
 
-**Kaiburr Technical Assessment - Task 1**  ![Java](https://img.shields.io/badge/Java-17-orange)
+### Get Task by ID
 
-A REST API built with **Spring Boot** and **MongoDB** that manages task objects. Tasks represent shell commands that can be executed, with full execution history tracking.
+![Get Task by ID](screenshots/03-get-task-by-id.png)**Kaiburr Technical Assessment - Task 1**  ![Java](https://img.shields.io/badge/Java-17-orange)
+
+
+
+### Search TasksA REST API built with **Spring Boot** and **MongoDB** that manages task objects. Tasks represent shell commands that can be executed, with full execution history tracking.
+
+![Search Tasks](screenshots/04-search-tasks.png)
 
 ---
 
-**Tech Stack:** Java 17 | Spring Boot 3.2.0 | MongoDB Atlas | Maven
+### Execute Task
 
-**Author:** Kishore  ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.0-green)
+![Execute Task](screenshots/05-execute-task.png)**Tech Stack:** Java 17 | Spring Boot 3.2.0 | MongoDB Atlas | Maven
+
+
+
+### Delete Task**Author:** Kishore  ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.0-green)
+
+![Delete Task](screenshots/06-delete-task.png)
+
+---
 
 ---
 
 ## 📋 Overview
+
+**Java REST API with Spring Boot and MongoDB for task management with command execution and history tracking.**
 
 ## API Endpoints
 
