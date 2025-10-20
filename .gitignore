@@ -26,6 +26,10 @@ logs/
 application-*.properties
 !application.properties
 
+# Ignore environment variables
+.env
+.env.local
+
 # Ignore temporary files
 *.tmp
 *.temp
