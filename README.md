@@ -1,4 +1,4 @@
-# Task Manager API - Kaiburr Assessment Task 1# Task Manager API - Kaiburr Assessment Task 1# Task 1: Java REST API with MongoDB# Task 1: Java REST API with MongoDB# Task Manager API - Kaiburr Assessment Task 1
+# Task Manager API - Kaiburr Assessment Task 1# Task Manager API - Kaiburr Assessment Task 1# Task Manager API - Kaiburr Assessment Task 1# Task 1: Java REST API with MongoDB# Task 1: Java REST API with MongoDB# Task Manager API - Kaiburr Assessment Task 1
 
 
 
@@ -6,7 +6,7 @@
 
 **Date:** October 20, 2025
 
-**Author:** Kishore  
+**Author:** Kishore n 
 
 ---
 
@@ -14,7 +14,7 @@
 
 ## Screenshots
 
-**Author:** Kishore  
+**Author:** Kishore N  
 
 ### Create Task
 
@@ -26,7 +26,37 @@
 
 ![Get All Tasks](screenshots/02-get-all-tasks.png)
 
+## Screenshots
+
+### Get Task by ID
+
+![Get Task by ID](screenshots/03-get-task-by-id.png)**Author:** Kishore  
+
+
+
+### Search Tasks### Create Task
+
+![Search Tasks](screenshots/04-search-tasks.png)
+
+![Create Task](screenshots/01-create-task.png)---
+
+### Execute Task
+
+![Execute Task](screenshots/05-execute-task.png)
+
+
+
+### Delete Task### Get All Tasks**Date:** October 20, 2025
+
+![Delete Task](screenshots/06-delete-task.png)
+
+![Get All Tasks](screenshots/02-get-all-tasks.png)
+
+---
+
 ## What This Does
+
+**Java REST API with Spring Boot and MongoDB for task management with command execution and history tracking.**
 
 ### Get Task by ID
 
