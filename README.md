@@ -5,6 +5,40 @@
 
 ---
 
+## What This Does
+
+A REST API built with **Spring Boot** and **MongoDB** that manages task objects. Tasks represent shell commands that can be executed, with full execution history tracking.
+
+**Tech Stack:** Java 17 | Spring Boot 3.2.0 | MongoDB Atlas | Maven
+
+---
+
+## API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `GET` | `/api/tasks` | Get all tasks |
+| `GET` | `/api/tasks?id={id}` | Get task by ID |
+| `PUT` | `/api/tasks` | Create/update task |
+| `DELETE` | `/api/tasks/{id}` | Delete task |
+| `GET` | `/api/tasks/search?name={name}` | Search by name |
+| `PUT` | `/api/tasks/{id}/execute` | Execute command |
+
+---
+
+## Quick Start
+
+```bash
+git clone https://github.com/kishore110804/Task-1.-Java-backend-and-REST-API-example..git
+cd Task-1.-Java-backend-and-REST-API-example.
+mvn clean install
+mvn spring-boot:run
+```
+
+**Access:** http://localhost:8080/swagger-ui.html
+
+---
+
 ## Screenshots
 
 ### Create Task
@@ -27,4 +61,4 @@
 
 ---
 
-**Java REST API with Spring Boot and MongoDB for task management with command execution and history tracking.**
+**Features:** CRUD operations • Command execution • Search functionality • Security validation • MongoDB storage • Swagger UI documentation
